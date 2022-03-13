@@ -4,13 +4,13 @@ import java.util.Date;
 
 public class DiscussPost {
     private int id;
-    private int userID;
+    private int userId;
     private String title;
     private String content;
     private int type;
     private int status;
     private Date createTime;
-    private int conmmentCount;
+    private int commentCount;
     private double score;
 
     public int getId() {
@@ -22,11 +22,11 @@ public class DiscussPost {
     }
 
     public int getUserID() {
-        return userID;
+        return userId;
     }
 
     public void setUserID(int userID) {
-        this.userID = userID;
+        this.userId = userID;
     }
 
     public String getTitle() {
@@ -69,12 +69,12 @@ public class DiscussPost {
         this.createTime = createTime;
     }
 
-    public int getConmmentCount() {
-        return conmmentCount;
+    public int getCommentCount() {
+        return commentCount;
     }
 
-    public void setConmmentCount(int conmmentCount) {
-        this.conmmentCount = conmmentCount;
+    public void setCommentCount(int commentCount) {
+        this.commentCount = commentCount;
     }
 
     public double getScore() {
@@ -89,13 +89,13 @@ public class DiscussPost {
     public String toString() {
         return "DiscussPost{" +
                 "id=" + id +
-                ", userID=" + userID +
+                ", userID=" + userId +
                 ", title='" + title + '\'' +
                 ", content='" + content + '\'' +
                 ", type=" + type +
                 ", status=" + status +
                 ", createTime=" + createTime +
-                ", conmmentCount=" + conmmentCount +
+                ", commentCount=" + commentCount +
                 ", score=" + score +
                 '}';
     }
